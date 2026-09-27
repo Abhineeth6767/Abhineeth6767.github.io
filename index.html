@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name — Portfolio</title>
+
+  <!-- Google Fonts: Fraunces (headings) + Inter (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============================= -->
+  <!-- NAVBAR                        -->
+  <!-- ============================= -->
+  <header class="navbar">
+    <nav class="nav-container">
+
+      <a href="#" class="logo">ABHINEETH SHANKAR</a>
+
+      <!-- Checkbox hack: lets us toggle the mobile menu with ZERO JavaScript.
+           The checkbox is hidden; the label acts as the visible button. -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle menu">
+        <span></span>
+      </label>
+
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ============================= -->
+    <!-- HERO                          -->
+    <!-- ============================= -->
+    <section id="hero" class="hero">
+      <div class="container hero-content">
+        <p class="eyebrow">Hi, I'm</p>
+        <h1 class="hero-name">ABHINEETH</h1>
+        <p class="hero-role">Frontend Developer</p>
+        <p class="hero-intro">
+          I build clean, functional interfaces and enjoy figuring out
+          how things work by actually building them.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View my work</a>
+          <a href="https://github.com/yourusername" class="btn btn-outline" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= -->
+    <!-- ABOUT                         -->
+    <!-- ============================= -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="about-box">
+          <h2 class="section-heading">About</h2>
+          <p class="about-text">
+            I'm a Computer Science student interested in frontend development
+            and building interactive web experiences. I enjoy learning by
+            building projects and experimenting with new ideas — this
+            portfolio itself is one of them.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= -->
+    <!-- SKILLS                        -->
+    <!-- ============================= -->
+    <section id="skills" class="section section-alt">
+      <div class="container">
+        <h2 class="section-heading">Skills</h2>
+
+        <div class="skills-grid">
+
+          <div class="skill-group skill-group-frontend">
+            <h3 class="skill-group-title">Frontend</h3>
+            <ul class="pill-list">
+              <li class="pill">HTML</li>
+              <li class="pill">CSS</li>
+            </ul>
+          </div>
+
+          <div class="skill-group skill-group-tools">
+            <h3 class="skill-group-title">Tools</h3>
+            <ul class="pill-list">
+              <li class="pill">Git</li>
+              <li class="pill">GitHub</li>
+              <li class="pill">VS Code</li>
+            </ul>
+          </div>
+
+          <div class="skill-group skill-group-learning">
+            <h3 class="skill-group-title">Currently learning</h3>
+            <ul class="pill-list">
+              <li class="pill">Java</li>
+              <li class="pill">Python</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= -->
+    <!-- PROJECTS                      -->
+    <!-- ============================= -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-heading">Projects</h2>
+
+        <div class="projects-grid">
+
+          <article class="project-card project-card-1">
+            <h3 class="project-title">Flexbox Game UI</h3>
+            <p class="project-desc">
+              A small interactive interface built to practice layout
+              fundamentals — box model, spacing and alignment.
+            </p>
+            <ul class="pill-list pill-list-tech">
+              <li class="pill pill-tech">HTML</li>
+              <li class="pill pill-tech">CSS</li>
+              <li class="pill pill-tech">Flexbox</li>
+            </ul>
+            
+          </article>
+
+          <article class="project-card project-card-2">
+            <h3 class="project-title">Responsive Landing Page</h3>
+            <p class="project-desc">
+              A fully responsive landing page demonstrating CSS Grid,
+              Flexbox and media queries across screen sizes.
+            </p>
+            <ul class="pill-list pill-list-tech">
+              <li class="pill pill-tech">HTML</li>
+              <li class="pill pill-tech">CSS Grid</li>
+              <li class="pill pill-tech">Media Queries</li>
+            </ul>
+           
+          </article>
+
+          <article class="project-card project-card-3">
+            <h3 class="project-title">CSS Animation Study</h3>
+            <p class="project-desc">
+              A small set of animated components exploring transitions,
+              transforms and keyframe animations.
+            </p>
+            <ul class="pill-list pill-list-tech">
+              <li class="pill pill-tech">CSS</li>
+              <li class="pill pill-tech">Keyframes</li>
+              <li class="pill pill-tech">Transitions</li>
+            </ul>
+          
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= -->
+    <!-- EDUCATION / EXPERIENCE        -->
+    <!-- ============================= -->
+    <section id="education" class="section section-alt">
+      <div class="container">
+        <h2 class="section-heading">Education</h2>
+        <div class="education-item">
+          <h3 class="education-degree">CS & AI</h3>
+          <p class="education-school">SCALER SCHOOL OF TECHNOLOGY</p>
+          <p class="education-date">2026— Present</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= -->
+    <!-- CONTACT                       -->
+    <!-- ============================= -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 class="section-heading">Contact</h2>
+        <p class="contact-text">Let's build something together.</p>
+
+        <div class="contact-links">
+          <a href=https://mail.google.com/mail/u/0/#inbox?compose=new>abhineethwork@gmail.com</a>
+          <a href="https://github.com/Abhineeth6767" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://linkedin.com/in/abhineeth-shankar" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================= -->
+  <!-- FOOTER                        -->
+  <!-- ============================= -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>&copy; 2026 ABHINEETH SHANKAR</p>
+      <p>Built with HTML &amp; CSS</p>
+    </div>
+  </footer>
+
+</body>
+</html>
+</body>
+</html>
