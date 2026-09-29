@@ -1,22 +1,17 @@
-/* ==========================================================
-   0. RESET
-   Browsers apply different default margins/box-sizing.
-   This makes sizing predictable across all elements.
-   ========================================================== */
+
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; /* padding/border are included IN the width, not added on top */
+  box-sizing: border-box; 
 }
 
 html {
-  scroll-behavior: smooth; /* smooth scroll when clicking navbar links */
+  scroll-behavior: smooth; 
 }
 
 body {
   font-family: "Inter", sans-serif;
-  background-color: #f7f0ec; /* warm blush cream */
-  color: #1b1b18;            /* near-black, warm tint */
+  background-color: #f7f0ec; 
   line-height: 1.6;
 }
 
@@ -34,18 +29,14 @@ img {
   display: block;
 }
 
-/* Reusable centered container - controls max width + side padding */
+
 .container {
   max-width: 1100px;
   margin: 0 auto;
   padding: 0 24px;
 }
 
-/* ==========================================================
-   1. NAVBAR
-   position: sticky keeps the navbar visible while scrolling,
-   without removing it from the page flow (unlike "fixed").
-   ========================================================== */
+
 .navbar {
   position: sticky;
   top: 0;
@@ -59,7 +50,7 @@ img {
   max-width: 1100px;
   margin: 0 auto;
   padding: 18px 24px;
-  display: flex;              /* flexbox: puts logo + links on one row */
+  display: flex;
   align-items: center;
   justify-content: space-between;
 }
@@ -71,7 +62,7 @@ img {
 }
 
 .nav-links {
-  display: flex;      /* flexbox: lays nav items out horizontally */
+  display: flex;    
   gap: 32px;
 }
 
@@ -82,21 +73,16 @@ img {
 }
 
 .nav-links a:hover {
-  color: #2f5d50; /* accent green */
+  color: #2f5d50; 
 }
 
-/* Hide the checkbox and the burger label on desktop -
-   they only appear on mobile (see media query below) */
+
 .nav-toggle,
 .nav-toggle-label {
   display: none;
 }
 
-/* ==========================================================
-   2. HERO
-   One orchestrated fade-in animation on page load only -
-   not repeated on every element, just this one entrance.
-   ========================================================== */
+
 .hero {
   min-height: 55vh;
   display: flex;
@@ -118,7 +104,7 @@ img {
 .hero-name {
   font-family: "Fraunces", serif;
   font-weight: 600;
-  font-size: clamp(2.5rem, 6vw, 4.5rem); /* scales smoothly between mobile and desktop */
+  font-size: clamp(2.5rem, 6vw, 4.5rem); 
   line-height: 1.1;
 }
 
@@ -130,7 +116,7 @@ img {
 }
 
 .hero-intro {
-  max-width: 46ch; /* keeps line length readable - roughly under 80 characters */
+  max-width: 46ch; 
   color: #57544c;
   margin-top: 20px;
 }
@@ -153,9 +139,7 @@ img {
   }
 }
 
-/* ==========================================================
-   3. BUTTONS
-   ========================================================== */
+
 .btn {
   display: inline-block;
   padding: 12px 24px;
@@ -185,9 +169,7 @@ img {
   color: #2f5d50;
 }
 
-/* ==========================================================
-   4. GENERIC SECTION SPACING
-   ========================================================== */
+
 .section {
   padding: 80px 0;
 }
@@ -203,11 +185,9 @@ img {
   margin-bottom: 32px;
 }
 
-/* ==========================================================
-   5. ABOUT
-   ========================================================== */
+
 .about-box {
-  background-color: #f0efe8; /* light box, slightly different from page background */
+  background-color: #f0efe8; 
   border: 1px solid #dedcd2;
   border-radius: 16px;
   padding: 48px;
@@ -219,19 +199,14 @@ img {
   font-size: 1.05rem;
 }
 
-/* ==========================================================
-   6. SKILLS
-   CSS Grid: unlike flexbox (one direction), grid lets us define
-   columns explicitly and have items wrap into rows automatically.
-   ========================================================== */
-/* Only the Skills heading is centered - other section headings stay left-aligned */
+
 #skills .section-heading {
   text-align: center;
 }
 
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+  grid-template-columns: repeat(3, 1fr); 
   gap: 40px;
 }
 
@@ -242,7 +217,7 @@ img {
   font-weight: 500;
 }
 
-/* Colored card treatment for each skill group */
+
 .skill-group {
   padding: 28px;
   border-radius: 14px;
@@ -253,18 +228,17 @@ img {
   transform: translateY(-4px);
 }
 
-.skill-group-frontend { background-color: #dde7e1; } /* sage green */
-.skill-group-tools    { background-color: #f5e6c8; } /* warm gold */
-.skill-group-learning { background-color: #f3dcd6; } /* dusty rose */
+.skill-group-frontend { background-color: #dde7e1; } 
+.skill-group-tools    { background-color: #f5e6c8; } 
+.skill-group-learning { background-color: #f3dcd6; } 
 
 .pill-list {
   display: flex;
-  flex-wrap: wrap;   /* pills move to the next line if they don't fit */
-  gap: 10px;
+  flex-wrap: wrap;  
 }
 
 .pill {
-  background-color: #f7f0ec; /* cream chip, sits on top of the colored card */
+  background-color: #f7f0ec; 
   color: #1b1b18;
   padding: 6px 14px;
   border-radius: 20px;
@@ -272,9 +246,7 @@ img {
 }
 
 
-/* ==========================================================
-   7. PROJECTS
-   ========================================================== */
+
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -282,7 +254,7 @@ img {
 }
 
 .project-card {
-  border: 1px solid transparent; /* stays invisible until hover */
+  border: 1px solid transparent; 
   border-radius: 8px;
   padding: 28px;
   display: flex;
@@ -295,10 +267,10 @@ img {
   border-color: #2f5d50;
 }
 
-/* Minimal, coordinated colors - same family used in the Skills cards */
-.project-card-1 { background-color: #dde7e1; } /* sage green */
-.project-card-2 { background-color: #f5e6c8; } /* warm gold */
-.project-card-3 { background-color: #f3dcd6; } /* dusty rose */
+
+.project-card-1 { background-color: #dde7e1; } 
+.project-card-2 { background-color: #f5e6c8; } 
+.project-card-3 { background-color: #f3dcd6; } 
 
 .project-title {
   font-family: "Fraunces", serif;
@@ -309,7 +281,7 @@ img {
 .project-desc {
   color: #57544c;
   font-size: 0.95rem;
-  flex-grow: 1; /* pushes tags + links down so all cards align at the bottom */
+  flex-grow: 1; 
 }
 
 .pill-list-tech {
@@ -317,7 +289,7 @@ img {
 }
 
 .pill-tech {
-  background-color: rgba(255, 255, 255, 0.5); /* frosted chip so it lifts off the colored card */
+  background-color: rgba(255, 255, 255, 0.5); 
   border: none;
   color: #1b1b18;
   padding: 4px 10px;
@@ -342,9 +314,7 @@ img {
   border-color: #2f5d50;
 }
 
-/* ==========================================================
-   8. EDUCATION
-   ========================================================== */
+
 .education-degree {
   font-family: "Fraunces", serif;
   font-size: 1.2rem;
@@ -361,9 +331,7 @@ img {
   margin-top: 4px;
 }
 
-/* ==========================================================
-   9. CONTACT
-   ========================================================== */
+
 .contact-text {
   font-size: 1.1rem;
   color: #57544c;
@@ -387,9 +355,7 @@ img {
   border-color: #2f5d50;
 }
 
-/* ==========================================================
-   10. FOOTER
-   ========================================================== */
+
 .footer {
   border-top: 1px solid #dedcd2;
   padding: 24px 0;
@@ -404,30 +370,23 @@ img {
   gap: 8px;
 }
 
-/* ==========================================================
-   11. RESPONSIVE DESIGN
-   Media queries change layout below a given screen width.
-   Here we go top-down with max-width, adjusting the desktop
-   layout for smaller screens.
-   ========================================================== */
 
-/* Tablet and below */
 @media (max-width: 768px) {
   .skills-grid {
-    grid-template-columns: 1fr; /* stack skill groups vertically */
+    grid-template-columns: 1fr; 
   }
 
   .projects-grid {
-    grid-template-columns: 1fr; /* stack project cards vertically */
+    grid-template-columns: 1fr;
   }
 
-  /* --- Mobile nav menu --- */
+ 
   .nav-toggle-label {
     display: block;
     cursor: pointer;
     width: 24px;
     height: 18px;
-    position: relative; /* lets the ::before/::after bars position off this element */
+    position: relative;
   }
 
   .nav-toggle-label span,
@@ -458,18 +417,17 @@ img {
     top: 100%;
     left: 0;
     right: 0;
-    flex-direction: column;   /* stack links vertically on mobile */
+    flex-direction: column;   
     background-color: #f7f0ec;
     border-bottom: 1px solid #dedcd2;
     padding: 24px;
     gap: 20px;
 
-    /* hidden by default */
+   
     display: none;
   }
 
-  /* When the hidden checkbox is checked, show the menu.
-     This is the "checkbox hack": pure CSS, no JavaScript needed. */
+
   .nav-toggle:checked ~ .nav-links {
     display: flex;
   }
@@ -478,7 +436,7 @@ img {
 /* Small phones */
 @media (max-width: 480px) {
   .hero-actions {
-    flex-direction: column; /* stack buttons full-width on very small screens */
+    flex-direction: column;
   }
 
   .btn {
@@ -486,7 +444,7 @@ img {
   }
 }
 
-/* Respect users who've asked for reduced motion */
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
